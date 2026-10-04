@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Breast ultrasound lesion segmentation case study by Autumn Wang." />
+  <title>Autumn Wang — Medical AI Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">AW<span>•</span></a>
+    <nav class="nav">
+      <a href="#work" data-en="Project" data-zh="项目">Project</a>
+      <a href="#results" data-en="Results" data-zh="结果">Results</a>
+      <a href="#viewer" data-en="Viewer" data-zh="案例">Viewer</a>
+      <a href="about.html" data-en="About" data-zh="关于我">About</a>
+      <div class="language-switch" aria-label="Language">
+        <button class="language-button active" data-language="en">EN</button>
+        <button class="language-button" data-language="zh">中文</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-shell">
+      <div class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow" data-en="MEDICAL IMAGING · COMPUTER VISION · APPLIED AI" data-zh="医学影像 · 计算机视觉 · 应用型 AI">
+            MEDICAL IMAGING · COMPUTER VISION · APPLIED AI
+          </p>
+
+          <h1>
+            <span data-en="Breast ultrasound" data-zh="乳腺超声">Breast ultrasound</span><br>
+            <span class="hero-accent" data-en="lesion segmentation." data-zh="病灶分割。">lesion segmentation.</span>
+          </h1>
+
+          <p class="hero-lede"
+             data-en="A reproducible PyTorch case study exploring segmentation loss design, augmentation, model capacity, and error analysis on BUSI ultrasound images."
+             data-zh="基于 PyTorch 的可复现医学影像分割项目，系统比较损失函数、数据增强与模型容量，并对 BUSI 超声影像进行错误分析。">
+             A reproducible PyTorch case study exploring segmentation loss design, augmentation, model capacity, and error analysis on BUSI ultrasound images.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#results" data-en="Explore results" data-zh="查看实验结果">Explore results</a>
+            <a class="btn btn-light" href="https://github.com/qwqtw/breast-ultrasound-segmentation" target="_blank" rel="noreferrer">
+              <span data-en="View source ↗" data-zh="查看源码 ↗">View source ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+
+          <div class="float-card card-main">
+            <div class="card-bar">
+              <span data-en="Segmentation preview" data-zh="分割预览">Segmentation preview</span>
+              <span class="status-dot">LIVE</span>
+            </div>
+            <div class="ultrasound-frame">
+              <div class="scan-lines"></div>
+              <div class="lesion-shape"></div>
+              <div class="contour"></div>
+            </div>
+            <div class="mini-row">
+              <span data-en="Prediction" data-zh="预测结果">Prediction</span>
+              <strong>Dice 0.80</strong>
+            </div>
+          </div>
+
+          <div class="float-card card-metric metric-one">
+            <span class="mini-label" data-en="Validation Dice" data-zh="验证集 Dice">Validation Dice</span>
+            <strong>0.70</strong>
+            <span class="mini-note">Deep U-Net</span>
+          </div>
+
+          <div class="float-card card-metric metric-two">
+            <span class="mini-label" data-en="Test median" data-zh="测试集中位数">Test median</span>
+            <strong>0.80</strong>
+            <span class="mini-note" data-en="98 images" data-zh="98 张图像">98 images</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-strip">
+        <div><span data-en="Validation Dice" data-zh="验证集 Dice">Validation Dice</span><strong>0.6963</strong></div>
+        <div><span data-en="Test Mean Dice" data-zh="测试集平均 Dice">Test Mean Dice</span><strong>0.6627</strong></div>
+        <div><span data-en="Test Median Dice" data-zh="测试集中位 Dice">Test Median Dice</span><strong>0.8041</strong></div>
+        <div><span data-en="Best Test Dice" data-zh="最佳测试 Dice">Best Test Dice</span><strong>0.9755</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow" data-en="01 · PROBLEM" data-zh="01 · 问题">01 · PROBLEM</p>
+          <h2 data-en="Clinical texture is noisy. Lesion boundaries are not."
+              data-zh="超声纹理复杂，病灶边界更难。">
+            Clinical texture is noisy. Lesion boundaries are not.
+          </h2>
+        </div>
+        <p class="section-copy"
+           data-en="Breast ultrasound contains weak boundaries, speckle noise, annotations, and high-contrast structures that can distract segmentation models. The project tests which modeling choices actually improve generalization."
+           data-zh="乳腺超声影像中存在弱边界、散斑噪声、标注与高对比结构，容易干扰分割模型。本项目通过控制变量实验验证哪些建模选择真正改善泛化能力。">
+           Breast ultrasound contains weak boundaries, speckle noise, annotations, and high-contrast structures that can distract segmentation models.
+        </p>
+      </div>
+
+      <div class="mosaic">
+        <article class="tile tile-large">
+          <span class="tile-index">A</span>
+          <h3 data-en="Reproducible pipeline" data-zh="可复现训练流程">Reproducible pipeline</h3>
+          <p data-en="Fixed stratified split, PyTorch Dataset/DataLoader, train/evaluate/predict scripts, and saved inference configuration."
+             data-zh="采用固定分层划分、PyTorch Dataset/DataLoader、独立 train/evaluate/predict 脚本，并保存推理配置。">
+             Fixed stratified split, PyTorch Dataset/DataLoader, train/evaluate/predict scripts, and saved inference configuration.
+          </p>
+          <div class="code-surface">
+            <span>452</span><small data-en="train" data-zh="训练">train</small>
+            <span>97</span><small data-en="validation" data-zh="验证">validation</small>
+            <span>98</span><small data-en="test" data-zh="测试">test</small>
+          </div>
+        </article>
+
+        <article class="tile tile-visual">
+          <div class="protein-loop loop-one"></div>
+          <div class="protein-loop loop-two"></div>
+          <div class="protein-loop loop-three"></div>
+          <p class="floating-caption"
+             data-en="Model capacity became the decisive bottleneck."
+             data-zh="模型容量最终成为最关键的性能瓶颈。">
+             Model capacity became the decisive bottleneck.
+          </p>
+        </article>
+
+        <article class="tile">
+          <span class="tile-index">B</span>
+          <h3 data-en="Loss diagnosis" data-zh="损失函数诊断">Loss diagnosis</h3>
+          <p data-en="BCE-only training collapsed toward background. BCE + soft Dice restored meaningful lesion overlap."
+             data-zh="仅使用 BCE 时模型塌缩为背景预测；加入 soft Dice 后恢复了有效的病灶区域学习。">
+             BCE-only training collapsed toward background.
+          </p>
+        </article>
+
+        <article class="tile">
+          <span class="tile-index">C</span>
+          <h3 data-en="Error analysis" data-zh="错误分析">Error analysis</h3>
+          <p data-en="Failure cases revealed responses to high-contrast tissue structures and annotations rather than lesion shape alone."
+             data-zh="失败案例显示模型会响应高对比组织结构与影像标注，而不仅仅是病灶形态。">
+             Failure cases revealed responses to high-contrast tissue structures and annotations rather than lesion shape alone.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow" data-en="02 · EXPERIMENTS" data-zh="02 · 实验">02 · EXPERIMENTS</p>
+          <h2 data-en="What actually moved the metric?" data-zh="真正提升性能的是什么？">What actually moved the metric?</h2>
+        </div>
+        <p class="section-copy"
+           data-en="Controlled comparisons kept the split, loss, optimizer, and image size fixed so architecture and augmentation effects could be separated."
+           data-zh="通过固定数据划分、损失函数、优化器和图像尺寸，分别评估数据增强与模型结构对性能的影响。">
+           Controlled comparisons kept the split, loss, optimizer, and image size fixed.
+        </p>
+      </div>
+
+      <div class="experiment-track">
+        <article class="experiment-card">
+          <div class="exp-top"><span>01</span><span data-en="Baseline" data-zh="基线">Baseline</span></div>
+          <h3 data-en="Small U-Net" data-zh="小型 U-Net">Small U-Net</h3>
+          <strong>0.5369</strong>
+          <p>BCE + Dice</p>
+        </article>
+
+        <article class="experiment-card dim">
+          <div class="exp-top"><span>02</span><span data-en="Augmentation" data-zh="数据增强">Augmentation</span></div>
+          <h3 data-en="Strong augmentation" data-zh="强数据增强">Strong augmentation</h3>
+          <strong>0.4504</strong>
+          <p data-en="Performance decreased" data-zh="性能下降">Performance decreased</p>
+        </article>
+
+        <article class="experiment-card dim">
+          <div class="exp-top"><span>03</span><span data-en="Augmentation" data-zh="数据增强">Augmentation</span></div>
+          <h3 data-en="Light augmentation" data-zh="轻量数据增强">Light augmentation</h3>
+          <strong>0.4989</strong>
+          <p data-en="Recovered partially" data-zh="部分恢复">Recovered partially</p>
+        </article>
+
+        <article class="experiment-card winner">
+          <div class="exp-top"><span>04</span><span data-en="Architecture" data-zh="模型结构">Architecture</span></div>
+          <h3 data-en="Deep U-Net + BatchNorm" data-zh="深层 U-Net + BatchNorm">Deep U-Net + BatchNorm</h3>
+          <strong>0.6963</strong>
+          <p data-en="+0.1594 absolute Dice" data-zh="Dice 绝对提升 +0.1594">+0.1594 absolute Dice</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section viewer-section" id="viewer">
+      <div class="viewer-copy">
+        <p class="eyebrow" data-en="03 · INTERACTIVE VIEWER" data-zh="03 · 交互式案例">03 · INTERACTIVE VIEWER</p>
+        <h2 data-en="Inspect the prediction, not just the score."
+            data-zh="不只看分数，也看模型到底预测了什么。">
+            Inspect the prediction, not just the score.
+        </h2>
+        <p data-en="Switch between representative failure, typical, and strong cases."
+           data-zh="切换查看代表性的失败、典型和优秀案例。">
+           Switch between representative failure, typical, and strong cases.
+        </p>
+
+        <div class="switch-group">
+          <span data-en="Case" data-zh="案例">Case</span>
+          <div class="pill-switch" id="caseSwitch">
+            <button data-case="failure" data-en="Failure" data-zh="失败">Failure</button>
+            <button data-case="typical" class="active" data-en="Typical" data-zh="典型">Typical</button>
+            <button data-case="strong" data-en="Strong" data-zh="优秀">Strong</button>
+          </div>
+        </div>
+
+        <div class="switch-group">
+          <span data-en="View" data-zh="视图">View</span>
+          <div class="pill-switch" id="viewSwitch">
+            <button data-view="original" class="active" data-en="Original" data-zh="原图">Original</button>
+            <button data-view="ground-truth" data-en="Ground truth" data-zh="真实标注">Ground truth</button>
+            <button data-view="prediction" data-en="Prediction" data-zh="模型预测">Prediction</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="viewer-device">
+        <div class="viewer-topbar">
+          <div>
+            <span id="viewerCaseLabel">Typical case</span>
+            <small id="viewerScore">Dice ≈ 0.80</small>
+          </div>
+          <span class="viewer-badge">BUSI</span>
+        </div>
+        <div class="viewer-canvas">
+          <div id="placeholderArt" class="placeholder-art">
+            <div class="scan-lines"></div>
+            <div class="lesion-shape large-lesion"></div>
+            <div class="contour contour-large"></div>
+          </div>
+          <img id="viewerImage" alt="Segmentation case" hidden />
+        </div>
+        <div class="viewer-meta">
+          <span>256 × 256</span>
+          <span>Threshold 0.45</span>
+          <span>PyTorch</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-panel">
+        <div class="final-copy">
+          <p class="eyebrow" data-en="04 · FINAL EVALUATION" data-zh="04 · 最终评估">04 · FINAL EVALUATION</p>
+          <h2 data-en="Held-out test set." data-zh="独立测试集评估。">Held-out test set.</h2>
+          <p data-en="Model architecture and threshold were selected using validation data before the final 98-image test evaluation."
+             data-zh="模型结构与阈值均在验证集上确定后，才对 98 张独立测试图像进行最终评估。">
+             Model architecture and threshold were selected using validation data before the final 98-image test evaluation.
+          </p>
+        </div>
+        <div class="metric-stack">
+          <div><span data-en="Mean Dice" data-zh="平均 Dice">Mean Dice</span><strong>0.6627</strong></div>
+          <div><span data-en="Median Dice" data-zh="中位 Dice">Median Dice</span><strong>0.8041</strong></div>
+          <div><span data-en="Best Dice" data-zh="最佳 Dice">Best Dice</span><strong>0.9755</strong></div>
+          <div><span data-en="Worst Dice" data-zh="最低 Dice">Worst Dice</span><strong>0.0000</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tech-section">
+      <p class="eyebrow" data-en="TECHNOLOGY" data-zh="技术栈">TECHNOLOGY</p>
+      <div class="tech-cloud">
+        <span>Python</span><span>PyTorch</span><span>NumPy</span><span>scikit-learn</span>
+        <span>Albumentations</span><span>Matplotlib</span><span>Git</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>王秋田（Autumn Wang）</strong>
+      <span data-en="Medical Imaging · Computer Vision · Applied AI"
+            data-zh="医学影像 · 计算机视觉 · 应用型 AI">
+        Medical Imaging · Computer Vision · Applied AI
+      </span>
+    </div>
+    <div>
+      <a href="about.html" data-en="About" data-zh="关于我">About</a>
+      <a href="https://github.com/qwqtw/breast-ultrasound-segmentation" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
