@@ -1015,3 +1015,237 @@ html[lang="zh"] strong {
     min-height: 460px;
   }
 }
+
+/* ==========================================================
+   Refined Chinese typography
+========================================================== */
+
+html[lang="zh"] .hero-copy h1,
+html[lang="zh"] .about-copy h1 {
+  letter-spacing: -0.015em;
+  line-height: 1.18;
+  font-weight: 600;
+}
+
+html[lang="zh"] .section-title-row h2,
+html[lang="zh"] .final-copy h2,
+html[lang="zh"] .contact-intro h2 {
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+
+/* ==========================================================
+   Refined portrait + education badge
+========================================================== */
+
+.portrait-column {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 16px;
+}
+
+
+.school-badge {
+  width: min(100%, 340px);
+
+  padding: 18px 20px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(255, 255, 255, 0.68);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 18px 40px
+    rgba(24, 34, 52, 0.08);
+}
+
+
+.school-badge span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #748090;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+.school-badge strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #0f1b2e;
+
+  font-size: 18px;
+}
+
+
+.school-badge em {
+  display: block;
+
+  color: #5f6c7b;
+
+  font-style: normal;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.portrait-shell {
+  width: min(100%, 300px);
+
+  height: 375px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: #dfe5e8;
+
+  border: 1px solid var(--line);
+
+  box-shadow:
+    0 24px 50px
+    rgba(18, 30, 46, 0.08);
+}
+
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center 24%;
+}
+
+
+/* ==========================================================
+   Improve About hero proportions
+========================================================== */
+
+.about-hero {
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(260px, 0.75fr);
+
+  gap: 70px;
+}
+
+
+/* ==========================================================
+   Refined biomedical visual tile
+========================================================== */
+
+.visual-tile {
+  position: relative;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background:
+    linear-gradient(
+      180deg,
+      #e7edf0 0%,
+      #dce6ea 100%
+    );
+}
+
+
+.visual-tile .protein-loop {
+  opacity: 0.88;
+}
+
+
+.visual-tile p {
+  position: absolute;
+
+  left: 24px;
+  bottom: 24px;
+
+  z-index: 3;
+
+  width: 245px;
+
+  margin: 0;
+
+  padding: 14px 16px;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.78);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.68);
+
+  backdrop-filter: blur(14px);
+
+  color: #223047;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width: 980px) {
+
+  .portrait-column {
+    align-items: flex-start;
+  }
+
+  .portrait-shell {
+    width: min(100%, 290px);
+    height: 360px;
+  }
+
+  .school-badge {
+    width: min(100%, 360px);
+  }
+
+}
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 640px) {
+
+  .portrait-shell {
+    width: min(100%, 250px);
+    height: 315px;
+  }
+
+  .school-badge {
+    width: 100%;
+  }
+
+}
