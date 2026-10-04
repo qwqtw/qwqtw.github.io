@@ -14,8 +14,8 @@ This version includes:
 - `assets/autumn-profile.png`
 
 ## Replace these placeholders
-- `YOUR_GITHUB_REPOSITORY_URL`
-- `YOUR_GITHUB_PROFILE_URL`
+- `https://github.com/qwqtw/breast-ultrasound-segmentation`
+- `https://github.com/qwqtw`
 
 ## Add the 9 segmentation images to `assets/`
 - `failure-original.png`
