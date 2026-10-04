@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -14,6 +17,8 @@
 
   <title>About — Autumn Wang</title>
 
+
+  <!-- Google Fonts -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -30,14 +35,18 @@
     rel="stylesheet"
   />
 
+
+  <!-- Main stylesheet -->
   <link
     rel="stylesheet"
     href="style.css"
   />
+
 </head>
 
 
 <body>
+
 
   <!-- ======================================================
        Navigation
@@ -63,6 +72,7 @@
         Project
       </a>
 
+
       <a
         href="about.html"
         class="active"
@@ -86,6 +96,7 @@
           EN
         </button>
 
+
         <button
           class="language-button"
           data-language="zh"
@@ -103,13 +114,16 @@
 
   <main>
 
+
     <!-- ======================================================
          About Hero
     ======================================================= -->
 
     <section class="about-hero">
 
+
       <div class="about-copy">
+
 
         <p
           class="eyebrow"
@@ -129,7 +143,9 @@
             Applied machine learning,
           </span>
 
+
           <br>
+
 
           <span
             class="hero-accent"
@@ -142,15 +158,17 @@
         </h1>
 
 
+
+        <!-- Personal introduction -->
         <div class="about-card">
 
           <p
             data-en="I’m Qiutian (Autumn) Wang, a biomedical engineering graduate student with a multidisciplinary background spanning computer science, cell and molecular biology, full-stack development, medical-device quality assurance, and regulatory affairs."
-            data-zh="我是 王秋田（Autumn Wang），目前就读于生物医学工程硕士项目，拥有计算机科学、分子细胞生物学、全栈软件开发以及医疗器械质量与法规事务的跨学科背景。"
+            data-zh="我是王秋田（Autumn Wang），目前就读于生物医学工程硕士项目，拥有计算机科学、分子细胞生物学、全栈软件开发以及医疗器械质量与法规事务的跨学科背景。"
           >
-            I’m Qiutian (Autumn) Wang, a biomedical engineering graduate student
-            with a multidisciplinary background spanning computer science,
-            cell and molecular biology, full-stack development,
+            I’m Qiutian (Autumn) Wang, a biomedical engineering graduate
+            student with a multidisciplinary background spanning computer
+            science, cell and molecular biology, full-stack development,
             medical-device quality assurance, and regulatory affairs.
           </p>
 
@@ -159,65 +177,73 @@
             data-en="My focus is applied machine learning, computer vision, and medical imaging, with particular interest in building practical AI systems that can be evaluated rigorously and deployed in real healthcare and medical-device environments."
             data-zh="我目前主要关注应用机器学习、计算机视觉与医学影像，尤其希望构建能够被严格评估，并可在真实医疗与医疗器械环境中落地的 AI 系统。"
           >
-            My focus is applied machine learning, computer vision, and medical
-            imaging, with particular interest in building practical AI systems
-            that can be evaluated rigorously and deployed in real healthcare
-            and medical-device environments.
+            My focus is applied machine learning, computer vision, and
+            medical imaging, with particular interest in building practical
+            AI systems that can be evaluated rigorously and deployed in real
+            healthcare and medical-device environments.
           </p>
 
         </div>
 
 
-        <!-- CV actions -->
-<div class="hero-actions">
 
-  <!-- English CV -->
-  <a
-    class="btn btn-dark"
-    href="assets/Autumn_Wang_CV.pdf"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <span
-      data-en="English Resume"
-      data-zh="英文简历"
-    >
-      English Resume
-    </span>
+        <!-- ==================================================
+             Resume Downloads
+        =================================================== -->
 
-    <span aria-hidden="true">
-      ↗
-    </span>
-  </a>
+        <div class="hero-actions">
 
 
-  <!-- Chinese CV -->
-  <a
-    class="btn btn-light"
-    href="assets/Autumn_Wang_CV_CN.pdf"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <span
-      data-en="Chinese Resume"
-      data-zh="中文简历"
-    >
-      Chinese Resume
-    </span>
+          <!-- English resume -->
+          <a
+            class="btn btn-dark"
+            href="assets/Autumn_Wang_CV.pdf"
+            download="Autumn_Wang_Resume.pdf"
+          >
 
-    <span aria-hidden="true">
-      ↗
-    </span>
-  </a>
+            <span
+              data-en="Download Resume"
+              data-zh="下载英文简历"
+            >
+              Download Resume
+            </span>
 
-</div>
+            <span aria-hidden="true">
+              ↓
+            </span>
+
+          </a>
+
+
+
+          <!-- Chinese resume -->
+          <a
+            class="btn btn-light"
+            href="assets/Autumn_Wang_CV_CN.pdf"
+            download="Autumn_Wang_Resume_CN.pdf"
+          >
+
+            <span
+              data-en="Chinese Resume"
+              data-zh="下载中文简历"
+            >
+              Chinese Resume
+            </span>
+
+            <span aria-hidden="true">
+              ↓
+            </span>
+
+          </a>
+
+        </div>
 
       </div>
 
 
 
       <!-- ====================================================
-           Portrait + Education Badge
+           Portrait + Education
       ===================================================== -->
 
       <div class="portrait-column">
@@ -260,7 +286,7 @@
             src="assets/autumn-profile.png"
             alt="Autumn Wang portrait"
             class="portrait-image"
-          >
+          />
 
         </div>
 
@@ -279,12 +305,13 @@
       <div class="about-grid">
 
 
-        <!-- Applied ML / CV -->
+        <!-- Applied Machine Learning / Computer Vision -->
         <article class="about-tile large">
 
           <span class="eyebrow">
             ML / CV
           </span>
+
 
           <h2
             data-en="Applied machine learning & computer vision"
@@ -292,6 +319,7 @@
           >
             Applied machine learning & computer vision
           </h2>
+
 
           <p
             data-en="PyTorch model development, medical image segmentation, model evaluation, threshold tuning, controlled ablations, and qualitative error analysis."
@@ -301,6 +329,7 @@
             model evaluation, threshold tuning, controlled ablations,
             and qualitative error analysis.
           </p>
+
 
           <div class="about-blob blob-blue"></div>
 
@@ -341,7 +370,7 @@
 
 
 
-        <!-- Software -->
+        <!-- Software Engineering -->
         <article class="about-tile">
 
           <span
@@ -373,11 +402,15 @@
 
 
 
-        <!-- Interactive Biomedical AI card -->
+        <!-- ==================================================
+             Interactive Biomedical AI Card
+        =================================================== -->
+
         <article
           class="about-tile visual-tile interactive-bio-card"
           id="bioCard"
         >
+
 
           <!-- Decorative molecular loops -->
           <div class="protein-loop loop-one"></div>
@@ -387,7 +420,9 @@
           <div class="protein-loop loop-three"></div>
 
 
+
           <div class="bio-card-content">
+
 
             <span
               class="eyebrow"
@@ -398,7 +433,10 @@
             </span>
 
 
+
+            <!-- Topic controls -->
             <div class="bio-selector">
+
 
               <button
                 class="bio-option active"
@@ -409,6 +447,7 @@
                 AI
               </button>
 
+
               <button
                 class="bio-option"
                 data-bio-topic="biomedical"
@@ -417,6 +456,7 @@
               >
                 Biomedical
               </button>
+
 
               <button
                 class="bio-option"
@@ -430,7 +470,10 @@
             </div>
 
 
+
+            <!-- Dynamic explanation -->
             <div class="bio-message">
+
 
               <span
                 id="bioMessageLabel"
@@ -438,6 +481,7 @@
               >
                 AI
               </span>
+
 
               <p id="bioMessageText">
                 Model performance matters beyond a single metric.
@@ -456,12 +500,14 @@
 
 
     <!-- ======================================================
-         AI + Medical Device Domain Experience
+         Domain Experience
     ======================================================= -->
 
     <section class="section domain-section">
 
+
       <div class="section-title-row">
+
 
         <div>
 
@@ -484,16 +530,16 @@
         </div>
 
 
+
         <p
           class="section-copy"
           data-en="I have built AI-assisted tools for FDA cybersecurity review and audit automation while working within medical-device QA/RA environments. That experience shapes how I think about validation, reliability, traceability, documentation, and deployment constraints."
           data-zh="我曾在医疗器械 QA/RA 工作中开发 AI 辅助工具，用于 FDA 网络安全资料审查、法规证据核查与审核报告自动化。这段经历也影响了我对模型验证、可靠性、可追溯性、技术文档与真实部署约束的理解。"
         >
           I have built AI-assisted tools for FDA cybersecurity review
-          and audit automation while working within medical-device
-          QA/RA environments. That experience shapes how I think about
-          validation, reliability, traceability, documentation, and
-          deployment constraints.
+          and audit automation while working within medical-device QA/RA
+          environments. That experience shapes how I think about validation,
+          reliability, traceability, documentation, and deployment constraints.
         </p>
 
       </div>
@@ -508,6 +554,7 @@
 
     <section class="section">
 
+
       <p
         class="eyebrow"
         data-en="AREAS OF INTEREST"
@@ -517,7 +564,9 @@
       </p>
 
 
+
       <div class="tech-cloud">
+
 
         <span
           data-en="Applied Machine Learning"
@@ -526,12 +575,14 @@
           Applied Machine Learning
         </span>
 
+
         <span
           data-en="Computer Vision"
           data-zh="计算机视觉"
         >
           Computer Vision
         </span>
+
 
         <span
           data-en="Medical Imaging"
@@ -540,12 +591,14 @@
           Medical Imaging
         </span>
 
+
         <span
           data-en="Healthcare AI"
           data-zh="医疗 AI"
         >
           Healthcare AI
         </span>
+
 
         <span
           data-en="Medical Devices"
@@ -566,7 +619,9 @@
 
     <section class="section contact-section">
 
+
       <div class="contact-intro">
+
 
         <p
           class="eyebrow"
@@ -610,9 +665,11 @@
             Email
           </span>
 
+
           <strong>
             qiutianw@gmail.com
           </strong>
+
 
           <em>↗</em>
 
@@ -620,7 +677,7 @@
 
 
 
-        <!-- Secondary email for users in China -->
+        <!-- China-friendly email -->
         <a href="mailto:xiaoyan527137@hotmail.com">
 
           <span
@@ -630,9 +687,11 @@
             Email (China-friendly)
           </span>
 
+
           <strong>
             xiaoyan527137@hotmail.com
           </strong>
+
 
           <em>↗</em>
 
@@ -651,9 +710,11 @@
             LinkedIn
           </span>
 
+
           <strong>
             Autumn Wang
           </strong>
+
 
           <em>↗</em>
 
@@ -672,6 +733,7 @@
             GitHub
           </span>
 
+
           <strong
             data-en="View projects"
             data-zh="查看项目"
@@ -679,62 +741,72 @@
             View projects
           </strong>
 
+
           <em>↗</em>
 
         </a>
 
 
 
-        <!-- English CV -->
-<a
-  href="assets/Autumn_Wang_CV.pdf"
-  target="_blank"
-  rel="noreferrer"
->
+        <!-- ==================================================
+             English Resume Download
+        =================================================== -->
 
-  <span
-    data-en="Resume · English"
-    data-zh="简历 · 英文"
-  >
-    Resume · English
-  </span>
+        <a
+          href="assets/Autumn_Wang_CV.pdf"
+          download="Autumn_Wang_Resume.pdf"
+        >
 
-  <strong
-    data-en="View English Resume"
-    data-zh="查看英文简历"
-  >
-    View English Resume
-  </strong>
-
-  <em>↗</em>
-
-</a>
+          <span
+            data-en="Resume · English"
+            data-zh="简历 · 英文"
+          >
+            Resume · English
+          </span>
 
 
-<!-- Chinese CV -->
-<a
-  href="assets/Autumn_Wang_CV_CN.pdf"
-  target="_blank"
-  rel="noreferrer"
->
+          <strong
+            data-en="Download English Resume"
+            data-zh="下载英文简历"
+          >
+            Download English Resume
+          </strong>
 
-  <span
-    data-en="Resume · Chinese"
-    data-zh="简历 · 中文"
-  >
-    Resume · Chinese
-  </span>
 
-  <strong
-    data-en="View Chinese Resume"
-    data-zh="查看中文简历"
-  >
-    View Chinese Resume
-  </strong>
+          <em>↓</em>
 
-  <em>↗</em>
+        </a>
 
-</a>
+
+
+        <!-- ==================================================
+             Chinese Resume Download
+        =================================================== -->
+
+        <a
+          href="assets/Autumn_Wang_CV_CN.pdf"
+          download="Autumn_Wang_Resume_CN.pdf"
+        >
+
+          <span
+            data-en="Resume · Chinese"
+            data-zh="简历 · 中文"
+          >
+            Resume · Chinese
+          </span>
+
+
+          <strong
+            data-en="Download Chinese Resume"
+            data-zh="下载中文简历"
+          >
+            Download Chinese Resume
+          </strong>
+
+
+          <em>↓</em>
+
+        </a>
 
       </div>
 
@@ -750,11 +822,13 @@
 
   <footer class="site-footer">
 
+
     <div>
 
       <strong>
         Autumn Wang
       </strong>
+
 
       <span
         data-en="Applied Machine Learning · Computer Vision · Medical AI"
@@ -764,6 +838,7 @@
       </span>
 
     </div>
+
 
 
     <div>
@@ -781,7 +856,11 @@
   </footer>
 
 
+
+  <!-- Main interaction script -->
   <script src="script.js"></script>
 
+
 </body>
+
 </html>
