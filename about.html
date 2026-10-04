@@ -182,10 +182,10 @@
         <div class="school-badge">
 
           <span
-            data-en="Current Program"
-            data-zh="当前项目"
+            data-en="Current Degree"
+            data-zh="当前就读专业"
           >
-            Current Program
+            Current Degree
           </span>
 
 
@@ -327,24 +327,79 @@
 
 
 
-        <!-- Biomedical visual card -->
-        <article class="about-tile visual-tile">
+       <!-- Interactive biomedical AI concept card -->
+<article
+  class="about-tile visual-tile interactive-bio-card"
+  id="bioCard"
+>
 
-          <div class="protein-loop loop-one"></div>
+  <!-- Decorative molecular loops -->
+  <div class="protein-loop loop-one"></div>
+  <div class="protein-loop loop-two"></div>
+  <div class="protein-loop loop-three"></div>
 
-          <div class="protein-loop loop-two"></div>
 
-          <div class="protein-loop loop-three"></div>
+  <div class="bio-card-content">
+
+    <span
+      class="eyebrow"
+      data-en="BIOMEDICAL AI"
+      data-zh="生物医学 AI"
+    >
+      BIOMEDICAL AI
+    </span>
 
 
-          <p
-            data-en="Biomedical context changes how AI problems are framed."
-            data-zh="生物医学背景会改变 AI 问题的定义方式。"
-          >
-            Biomedical context changes how AI problems are framed.
-          </p>
+    <div class="bio-selector">
 
-        </article>
+      <button
+        class="bio-option active"
+        data-bio-topic="ai"
+        data-en="AI"
+        data-zh="AI"
+      >
+        AI
+      </button>
+
+      <button
+        class="bio-option"
+        data-bio-topic="biomedical"
+        data-en="Biomedical"
+        data-zh="生物医学"
+      >
+        Biomedical
+      </button>
+
+      <button
+        class="bio-option"
+        data-bio-topic="regulation"
+        data-en="Regulation"
+        data-zh="法规"
+      >
+        Regulation
+      </button>
+
+    </div>
+
+
+    <div class="bio-message">
+
+      <span
+        id="bioMessageLabel"
+        class="bio-message-label"
+      >
+        AI
+      </span>
+
+      <p id="bioMessageText">
+        Model performance matters beyond a single metric.
+      </p>
+
+    </div>
+
+  </div>
+
+</article>
 
       </div>
 

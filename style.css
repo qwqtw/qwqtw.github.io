@@ -1178,37 +1178,7 @@ html[lang="zh"] .contact-intro h2 {
 }
 
 
-.visual-tile p {
-  position: absolute;
 
-  left: 24px;
-  bottom: 24px;
-
-  z-index: 3;
-
-  width: 245px;
-
-  margin: 0;
-
-  padding: 14px 16px;
-
-  border-radius: 16px;
-
-  background:
-    rgba(255, 255, 255, 0.78);
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.68);
-
-  backdrop-filter: blur(14px);
-
-  color: #223047;
-
-  font-size: 14px;
-
-  line-height: 1.6;
-}
 
 
 /* ==========================================================
@@ -1248,4 +1218,383 @@ html[lang="zh"] .contact-intro h2 {
     width: 100%;
   }
 
+}
+
+/* ==========================================================
+   Interactive biomedical AI card
+========================================================== */
+
+.interactive-bio-card {
+  min-height: 300px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e7edf0 0%,
+      #dce5eb 100%
+    );
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  transform-style: preserve-3d;
+}
+
+
+/* Add depth when the card is active */
+.interactive-bio-card:hover {
+  box-shadow:
+    0 28px 55px
+    rgba(22, 35, 52, 0.12);
+}
+
+
+/* Keep content above the decorative loops */
+.bio-card-content {
+  position: relative;
+
+  z-index: 4;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Topic selector */
+.bio-selector {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+/* Interactive topic buttons */
+.bio-option {
+  border: 1px solid
+    rgba(255, 255, 255, 0.6);
+
+  padding: 8px 11px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255, 255, 255, 0.48);
+
+  backdrop-filter: blur(10px);
+
+  color: #627080;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.bio-option:hover {
+  transform: translateY(-2px);
+}
+
+
+.bio-option.active {
+  color: #ffffff;
+
+  background: #17263f;
+
+  border-color: #17263f;
+}
+
+
+/* Dynamic explanation panel */
+.bio-message {
+  margin-top: auto;
+
+  width: min(100%, 280px);
+
+  padding: 16px 18px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.80);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(16px);
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+.bio-message-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #53657a;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+.bio-message p {
+  margin: 0;
+
+  color: #223047;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Animate the molecular shapes on hover */
+.interactive-bio-card:hover .loop-one {
+  transform:
+    rotate(28deg)
+    translateX(10px);
+}
+
+
+.interactive-bio-card:hover .loop-two {
+  transform:
+    rotate(-34deg)
+    translateY(-8px);
+}
+
+
+.interactive-bio-card:hover .loop-three {
+  transform:
+    rotate(52deg)
+    translateX(-8px);
+}
+
+
+.interactive-bio-card .protein-loop {
+  transition:
+    transform 0.8s
+    cubic-bezier(
+      0.22,
+      1,
+      0.36,
+      1
+    );
+}
+
+/* Fix spacing inside the biomedical explanation card */
+.bio-message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-message-label {
+  display: block;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.bio-message p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.bio-message-label {
+  display: inline-flex;
+  align-self: flex-start;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  background: rgba(23, 38, 63, 0.08);
+
+  color: #53657a;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  margin: 0 0 4px 0;
+}
+
+/* ==========================================================
+   Final layout fix for interactive biomedical card
+========================================================== */
+
+.interactive-bio-card {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 30px;
+
+  overflow: hidden;
+}
+
+
+/* Keep interactive content evenly distributed */
+.bio-card-content {
+  position: relative;
+  z-index: 4;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Keep the title close to the buttons */
+.bio-card-content .eyebrow {
+  margin-bottom: 18px;
+}
+
+
+/* Compact selector spacing */
+.bio-selector {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+
+/* Remove the old visual-tile paragraph positioning */
+.interactive-bio-card > p,
+.interactive-bio-card .bio-message p {
+  position: static;
+
+  width: auto;
+
+  left: auto;
+  bottom: auto;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+
+  backdrop-filter: none;
+}
+
+
+/* Explanation card */
+.bio-message {
+  margin-top: 8px;
+
+  width: min(100%, 290px);
+
+  padding: 16px 18px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(14px);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* Small category label */
+.bio-message-label {
+  display: inline-flex;
+
+  align-self: flex-start;
+
+  margin: 0;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  background: rgba(23, 38, 63, 0.08);
+
+  color: #53657a;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* Main explanation text */
+.bio-message p {
+  margin: 0;
+
+  color: #223047;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* Keep the decorative loops on the right side */
+.interactive-bio-card .protein-loop {
+  pointer-events: none;
+
+  opacity: 0.78;
+}
+
+
+/* Push the loops slightly farther right */
+.interactive-bio-card .loop-one {
+  right: -30px;
+}
+
+.interactive-bio-card .loop-two {
+  right: -70px;
+}
+
+.interactive-bio-card .loop-three {
+  right: -10px;
 }
