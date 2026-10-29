@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#edf0f3"/>
+<meta name="description" content="Banking UI & API Test Automation: a Playwright and TypeScript quality engineering project covering cross-browser, UI, REST API, accessibility, E2E, and CI workflows."/>
+<title>Banking QA Automation — Quality Engineering | Autumn Wang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="qa-detail">
+<header class="site-header">
+<a aria-label="Autumn Wang home" class="brand" href="index.html">AW<span>•</span></a>
+<nav aria-label="Primary navigation" class="nav portfolio-nav">
+<a href="index.html#projects" data-en="Projects" data-zh="项目">Projects</a>
+<a href="about.html" data-en="About" data-zh="关于我">About</a>
+<div class="language-switch" aria-label="Language"><button type="button" class="language-button active" data-language="en">EN</button><button type="button" class="language-button" data-language="zh">中文</button></div>
+</nav>
+</header>
+<main>
+<div class="dm-breadcrumb"><a href="index.html#projects" data-en="← All projects" data-zh="← 全部项目">← All projects</a><span>/</span><span>Banking QA Automation</span></div>
+<section class="qa-hero">
+  <div>
+    <span class="qa-hero-note" data-en="SOFTWARE QUALITY · PERSONAL PROJECT" data-zh="软件质量 · 个人项目">SOFTWARE QUALITY · PERSONAL PROJECT</span>
+    <h1>Banking QA <span>Automation.</span></h1>
+    <p class="qa-hero-intro" data-en="A Playwright + TypeScript quality engineering framework for a simplified banking application. It validates browser interactions, REST APIs, end-to-end transfers, and accessibility—with reusable test structure and CI-ready execution." data-zh="一个面向模拟银行应用的 Playwright + TypeScript 软件质量工程框架，覆盖浏览器交互、REST API、端到端转账和无障碍检查，并采用可复用测试结构与可持续集成的执行配置。">A Playwright + TypeScript quality engineering framework for a simplified banking application. It validates browser interactions, REST APIs, end-to-end transfers, and accessibility—with reusable test structure and CI-ready execution.</p>
+    <div class="qa-facts"><span>Playwright</span><span>TypeScript</span><span>React + Express</span><span>CI / Docker</span></div>
+    <div class="portfolio-hero-actions"><a class="btn btn-dark" href="#coverage" data-en="Explore test coverage ↓" data-zh="查看测试覆盖 ↓">Explore test coverage ↓</a><a class="btn btn-light" href="#implementation" data-en="How it works ↓" data-zh="了解实现方式 ↓">How it works ↓</a><a
+  class="btn btn-light"
+  href="https://github.com/qwqtw/banking-qa-automation"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-en="View source code ↗"
+  data-zh="查看源码 ↗"
+>
+  View source code ↗
+</a></div>
+  </div>
+  <div class="qa-hero-visual">
+    <div class="qa-project-visual" aria-label="Illustrative test report inspired by the project test suite">
+      <div class="qa-visual-header"><span class="qa-visual-dots"><i></i><i></i><i></i></span><span>playwright / test suite</span><span class="qa-visual-time">AUTOMATED</span></div>
+      <div class="qa-visual-body">
+        <div class="qa-visual-line"><span class="qa-check">✓</span><span>Banking transfer E2E</span><em>UI + API</em></div>
+        <div class="qa-visual-line"><span class="qa-check">✓</span><span>Insufficient funds</span><em>REGRESSION</em></div>
+        <div class="qa-visual-line"><span class="qa-check">✓</span><span>REST endpoint checks</span><em>API</em></div>
+        <div class="qa-visual-line"><span class="qa-check">✓</span><span>Accessibility scan</span><em>WCAG</em></div>
+        <div class="qa-visual-line"><span class="qa-check">✓</span><span>Parallel data isolation</span><em>SETUP</em></div>
+      </div>
+      <div class="qa-visual-footer"><span>CHROMIUM</span><span>FIREFOX</span><span>WEBKIT</span><span>GITHUB ACTIONS</span></div>
+    </div>
+    <p class="qa-disclaimer" data-en="Illustrative interface based on implemented test categories; not a screenshot of actual test results." data-zh="根据实际实现的测试类别绘制的示意界面，并非真实测试运行结果截图。">Illustrative interface based on implemented test categories; not a screenshot of actual test results.</p>
+  </div>
+</section>
+<section class="portfolio-section" id="coverage">
+ <div class="portfolio-section-head"><div><p class="eyebrow" data-en="01 · COVERAGE" data-zh="01 · 测试覆盖">01 · COVERAGE</p><h2 data-en="Beyond checking a button click." data-zh="不止于验证按钮点击。">Beyond checking a button click.</h2></div><p data-en="The framework tests a banking workflow at multiple layers, including successful and rejected transfers, backend state, and accessibility checks." data-zh="框架从多个层面验证模拟银行业务流程，包括转账成功与拒绝、后端状态和无障碍检查。">The framework tests a banking workflow at multiple layers, including successful and rejected transfers, backend state, and accessibility checks.</p></div>
+ <div class="qa-intro-grid">
+ <article class="qa-info-card"><span>01 / UI</span><h3 data-en="Browser workflow tests" data-zh="浏览器流程测试">Browser workflow tests</h3><p data-en="Verify dashboard balances, transfer confirmations, transaction history, invalid amounts, and insufficient-funds behavior." data-zh="验证账户余额、转账确认、交易记录、无效金额以及余额不足时的处理逻辑。">Verify dashboard balances, transfer confirmations, transaction history, invalid amounts, and insufficient-funds behavior.</p></article>
+ <article class="qa-info-card"><span>02 / API + E2E</span><h3 data-en="State checked twice" data-zh="双层核对业务状态">State checked twice</h3><p data-en="Create accounts through test endpoints, execute transfers through the UI, and verify both frontend state and REST API transaction records." data-zh="通过测试接口创建账户，在 UI 中执行转账，并核对前端状态与 REST API 交易记录。">Create accounts through test endpoints, execute transfers through the UI, and verify both frontend state and REST API transaction records.</p></article>
+ <article class="qa-info-card"><span>03 / ACCESSIBILITY</span><h3 data-en="Accessibility checks" data-zh="无障碍检查">Accessibility checks</h3><p data-en="Use axe-core with Playwright to flag serious and critical violations under WCAG 2.0 A / AA checks." data-zh="将 axe-core 与 Playwright 结合，基于 WCAG 2.0 A / AA 检查严重和关键级别的无障碍问题。">Use axe-core with Playwright to flag serious and critical violations under WCAG 2.0 A / AA checks.</p></article>
+ </div>
+</section>
+<section class="portfolio-section" id="implementation">
+ <div class="portfolio-section-head"><div><p class="eyebrow" data-en="02 · IMPLEMENTATION" data-zh="02 · 实现方法">02 · IMPLEMENTATION</p><h2 data-en="Repeatable tests, isolated state." data-zh="可复现测试，隔离测试状态。">Repeatable tests, isolated state.</h2></div><p data-en="Stateful tests create dedicated accounts through a mock API, reducing shared-data collisions during parallel execution. Page Object Model classes keep browser interactions reusable." data-zh="有状态测试通过模拟 API 创建独立账户，降低并行运行时的共享数据冲突。Page Object Model 将浏览器交互封装为可复用操作。">Stateful tests create dedicated accounts through a mock API, reducing shared-data collisions during parallel execution. Page Object Model classes keep browser interactions reusable.</p></div>
+ <div class="qa-flow">
+ <div class="qa-flow-step"><span class="step-num">STEP 01</span><strong data-en="Provision account" data-zh="创建测试账户">Provision account</strong><p data-en="Create a fresh account with a known balance through the mock API." data-zh="通过模拟 API 创建初始余额明确的独立测试账户。">Create a fresh account with a known balance through the mock API.</p></div>
+ <div class="qa-flow-step"><span class="step-num">STEP 02</span><strong data-en="Run browser flow" data-zh="执行浏览器操作">Run browser flow</strong><p data-en="Open the matching account and perform a transfer through React UI." data-zh="打开对应账户，通过 React 界面发起转账。">Open the matching account and perform a transfer through React UI.</p></div>
+ <div class="qa-flow-step"><span class="step-num">STEP 03</span><strong data-en="Verify API state" data-zh="验证后端状态">Verify API state</strong><p data-en="Assert updated balances and corresponding transaction records via REST endpoints." data-zh="通过 REST 接口核对更新后的余额和交易记录。">Assert updated balances and corresponding transaction records via REST endpoints.</p></div>
+ <div class="qa-flow-step"><span class="step-num">STEP 04</span><strong data-en="Collect diagnostics" data-zh="收集测试诊断信息">Collect diagnostics</strong><p data-en="Retain HTML reports and failure screenshots, traces, and videos for debugging." data-zh="保留 HTML 报告，以及失败时的截图、追踪和视频，辅助调试。">Retain HTML reports and failure screenshots, traces, and videos for debugging.</p></div>
+ </div>
+ <div class="qa-evidence"><div class="qa-evidence-top"><span data-en="Excerpt · Playwright end-to-end test" data-zh="代码片段 · Playwright 端到端测试">Excerpt · Playwright end-to-end test</span><span>TypeScript</span></div><pre><code>const account = await createTestAccount(request, user, 1000);
+await bankingPage.goto(account.id);
+await bankingPage.transfer(100);
+await bankingPage.verifyBalance(900);
+
+const response = await request.get(
+  `http://localhost:3001/accounts/${account.id}`
+);
+expect((await response.json()).balance).toBe(900);</code></pre></div>
+ <p class="qa-evidence-note" data-en="The excerpt is condensed from the project's actual test pattern. The application uses a local mock API and synthetic banking data—not real customer or banking records." data-zh="以上为根据真实测试模式精简的代码片段。应用使用本地模拟 API 与虚构银行数据，不涉及真实客户或银行记录。">The excerpt is condensed from the project's actual test pattern. The application uses a local mock API and synthetic banking data—not real customer or banking records.</p>
+</section>
+<section class="portfolio-section">
+ <div class="portfolio-section-head"><div><p class="eyebrow" data-en="03 · TOOLING &amp; DELIVERY" data-zh="03 · 工具与交付">03 · TOOLING &amp; DELIVERY</p><h2 data-en="Designed for engineering workflows." data-zh="面向工程流程设计。">Designed for engineering workflows.</h2></div><p data-en="Tests are organized into smoke, regression, API, and accessibility groups. The repository includes GitHub Actions automation, containerized test execution, and a Google Cloud Build configuration." data-zh="测试按照 Smoke、Regression、API 和 Accessibility 分类。项目还包含 GitHub Actions 自动化、Docker 容器化运行及 Google Cloud Build 配置。">Tests are organized into smoke, regression, API, and accessibility groups. The repository includes GitHub Actions automation, containerized test execution, and a Google Cloud Build configuration.</p></div>
+ <div class="dm-impact-grid">
+ <div><span>01</span><strong data-en="Cross-browser coverage" data-zh="跨浏览器覆盖">Cross-browser coverage</strong><p data-en="Chromium, Firefox, and WebKit projects share reusable UI tests." data-zh="Chromium、Firefox 和 WebKit 复用同一套 UI 测试。">Chromium, Firefox, and WebKit projects share reusable UI tests.</p></div>
+ <div><span>02</span><strong data-en="CI and reporting" data-zh="持续集成与报告">CI and reporting</strong><p data-en="GitHub Actions is configured to run Playwright on pushes and pull requests, uploading HTML reports as artifacts." data-zh="GitHub Actions 配置为在 Push 和 Pull Request 时执行 Playwright，并上传 HTML 测试报告。">GitHub Actions is configured to run Playwright on pushes and pull requests, uploading HTML reports as artifacts.</p></div>
+ <div><span>03</span><strong data-en="Portable test setup" data-zh="可移植的测试环境">Portable test setup</strong><p data-en="Docker execution and a separate Cloud Build configuration describe repeatable local and cloud-based test runs." data-zh="Docker 执行环境及单独的 Cloud Build 配置支持设计可复现的本地和云端测试流程。">Docker execution and a separate Cloud Build configuration describe repeatable local and cloud-based test runs.</p></div>
+ </div>
+</section>
+<section class="portfolio-section dm-tech"><p class="eyebrow" data-en="TECH STACK" data-zh="技术栈">TECH STACK</p><div class="tech-cloud"><span>Playwright</span><span>TypeScript</span><span>React</span><span>Node.js / Express</span><span>REST APIs</span><span>Page Object Model</span><span>axe-core</span><span>GitHub Actions</span><span>Docker</span><span>Google Cloud Build config</span></div><p class="qa-tech-note" data-en="Project scope: this is a software test automation framework for a mock banking app; it is separate from my medical-device AI-assisted regulatory validation work. Cloud Build is included as configuration, not presented as a verified deployment." data-zh="项目范围：这是针对模拟银行应用的软件自动化测试框架，与我在医疗器械领域的 AI 辅助法规验证工作是两个不同项目。Google Cloud Build 仅作为配置展示，不宣称已完成线上部署。">Project scope: this is a software test automation framework for a mock banking app; it is separate from my medical-device AI-assisted regulatory validation work. Cloud Build is included as configuration, not presented as a verified deployment.</p></section>
+<section class="portfolio-bottom-banner"><div><p class="eyebrow" data-en="EXPLORE MORE" data-zh="浏览更多项目">EXPLORE MORE</p><h2 data-en="From software quality to applied AI." data-zh="从软件质量工程到应用型 AI。">From software quality to applied AI.</h2><p data-en="See the agentic AI DirectorMind prototype or the reproducible PyTorch ultrasound segmentation study." data-zh="继续查看 Agentic AI 项目 DirectorMind，或 PyTorch 超声影像分割实验。">See the agentic AI DirectorMind prototype or the reproducible PyTorch ultrasound segmentation study.</p></div><a class="btn btn-light" href="index.html#projects" data-en="See all projects ↗" data-zh="查看全部项目 ↗">See all projects ↗</a></section>
+</main>
+<footer class="site-footer portfolio-footer"><div><strong>Qiutian (Autumn) Wang</strong><span data-en="Applied ML · Applied AI · Agentic AI · Biomedical Science" data-zh="应用机器学习 · 应用 AI · 智能体 AI · 生物医学科学">Applied ML · Applied AI · Agentic AI · Biomedical Science</span></div><div><a href="index.html#projects" data-en="Projects" data-zh="项目">Projects</a><a href="about.html" data-en="About" data-zh="关于我">About</a><a href="https://github.com/qwqtw" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

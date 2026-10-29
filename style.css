@@ -2070,3 +2070,80 @@ a.btn:focus-visible { outline: 3px solid #86a7ff; outline-offset: 3px; }
 /* Wider interdisciplinary positioning on About: prevent overlong heading words from overflowing. */
 .about-copy h1 { overflow-wrap: normal; }
 @media (min-width: 981px) { .about-copy h1 { font-size: clamp(46px, 4.3vw, 69px); } }
+
+
+/* ========== Banking QA Automation portfolio addition ========== */
+@media (min-width: 1101px) {
+  .portfolio-project-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+  .portfolio-project-image { height: 260px; }
+  .portfolio-project-content { padding: 24px 22px 27px; }
+  .portfolio-project-content h3 { font-size: 22px; }
+  .portfolio-project-content p { min-height: 110px; }
+  .dm-project-cover { padding: 20px 20px 0; }
+  .cv-project-cover { padding: 16px; }
+  .cv-card-window { transform: scale(.84); transform-origin: top center; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .portfolio-project-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .portfolio-project-grid > :last-child { grid-column: 1 / -1; }
+  .portfolio-project-grid > :last-child .portfolio-project-image { height: 300px; }
+}
+.qa-project-cover { background: radial-gradient(circle at 15% 80%,rgba(94,198,196,.34),transparent 42%), linear-gradient(135deg,#213352,#101c30 80%); padding: 56px 23px 20px; }
+.qa-project-visual { border:1px solid rgba(189,215,235,.30); border-radius:15px; overflow:hidden; box-shadow:0 22px 36px rgba(5,11,23,.25); background:#15263d; color:#e2edf8; max-width:570px; margin:auto; }
+.qa-visual-header { height:35px; background:#243951; display:flex; gap:10px; align-items:center; padding:0 13px; font:600 10px/1.1 Inter,sans-serif; color:#c8d6e4; }
+.qa-visual-header>.qa-visual-time { margin-left:auto; color:#8be4c8; letter-spacing:.12em; }
+.qa-visual-dots { display:flex; gap:4px; }.qa-visual-dots i {width:6px;height:6px;background:#7e95ae;border-radius:50%;display:block;}
+.qa-visual-dots i:first-child {background:#ff9d85;} .qa-visual-dots i:nth-child(2) {background:#f5cb82;} .qa-visual-dots i:last-child {background:#89d8bd;}
+.qa-visual-body { padding:12px 13px 10px; }
+.qa-visual-line { display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(217,233,249,.08);font-size:10px; }
+.qa-visual-line:last-child {border-bottom:0;}
+.qa-visual-line .qa-check {width:18px;height:18px;display:grid;place-items:center;border-radius:6px;color:#173e32;background:#a5e4ce; font-size:12px;font-weight:800;flex-shrink:0;}
+.qa-visual-line em {margin-left:auto;color:#8faac8;font-size:8px;letter-spacing:.07em;font-style:normal;white-space:nowrap;}
+.qa-visual-footer {display:flex;flex-wrap:wrap;gap:6px;padding:11px 12px 13px;background:#101f33;}
+.qa-visual-footer span {font-size:8px;letter-spacing:.07em;color:#a8c5d7;border:1px solid #38536b;padding:4px 7px;border-radius:99px;}
+/* The miniature preview above is an illustrative visual of the test suite, not a captured test report. */
+.qa-detail .dm-breadcrumb { padding-top:25px; }
+.qa-hero { padding:53px 50px; border-radius:32px; background:#f5fafb; border:1px solid #dfe7ee; display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center; }
+.qa-hero h1 {font-family:Sora,sans-serif;font-size:clamp(42px,5vw,66px);font-weight:600;letter-spacing:-.065em;line-height:1.08;margin:0 0 20px;}
+.qa-hero h1 span {display:block;color:#4d6b87;}
+.qa-hero-intro {font-size:15px;line-height:1.9;color:#657489;max-width:590px;margin:0 0 21px;}
+.qa-hero .qa-hero-note {display:inline-flex;padding:7px 12px;border-radius:99px;background:#e7f0f2;color:#385f6c;font-size:10px;font-weight:700;letter-spacing:.06em;margin-bottom:21px;}
+.qa-facts {display:flex;flex-wrap:wrap;gap:9px;margin:25px 0;}
+.qa-facts span {background:#fff;border:1px solid #dce7ec;border-radius:9px;padding:9px 11px;color:#536b7c;font-size:11px;font-weight:600;}
+.qa-hero-visual {padding:22px 7px;}
+.qa-hero-visual .qa-project-visual {max-width:100%;transform:rotate(1.2deg);box-shadow:0 24px 50px rgba(23,43,59,.18);}
+.qa-hero-visual .qa-visual-line {padding:12px 0;font-size:12px;}.qa-hero-visual .qa-visual-footer span {font-size:10px;}
+.qa-hero-visual .qa-visual-header {height:42px;}
+.qa-disclaimer {font-size:11px;line-height:1.7;color:#6b7a87;margin-top:13px;}
+.qa-intro-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:35px;}
+.qa-info-card {background:#fff;border:1px solid #e0e8ed;border-radius:22px;padding:27px;min-height:220px;}
+.qa-info-card>span {display:inline-block;color:#6785a2;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:19px;}
+.qa-info-card h3 {font-family:Sora,sans-serif;font-size:19px;letter-spacing:-.035em;line-height:1.35;margin:0 0 14px;}
+.qa-info-card p {color:#69788a;font-size:13px;line-height:1.8;margin:0;}
+.qa-flow {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:30px;}
+.qa-flow-step {position:relative;background:#17263f;border-radius:18px;color:#fff;padding:23px 18px;min-height:174px;}
+.qa-flow-step .step-num {color:#8ecbbc;font-weight:700;letter-spacing:.08em;font-size:10px;}
+.qa-flow-step strong {display:block;font-size:16px;margin:16px 0 10px;}
+.qa-flow-step p {color:#bfcedd;font-size:12px;line-height:1.7;margin:0;}
+.qa-evidence {border-radius:20px;background:#15243c;color:#e3edf9;overflow:hidden;margin-top:30px;}
+.qa-evidence-top {background:#213753;padding:13px 21px;display:flex;justify-content:space-between;gap:12px;color:#bad0e6;font-size:11px;}
+.qa-evidence pre {margin:0;overflow-x:auto;padding:22px 26px;line-height:1.8;font-size:12px;color:#e9f0fb;white-space:pre;}
+.qa-evidence-note {background:#f1f6f8;border-radius:12px;padding:14px 17px;margin-top:14px;font-size:12px;line-height:1.65;color:#526779;}
+.qa-tech-note {color:#66788b;font-size:13px;line-height:1.8;max-width:780px;margin:20px 0 0;}
+.qa-detail .portfolio-bottom-banner {margin-top:75px;}
+@media(max-width:1000px){
+  .qa-hero{grid-template-columns:1fr;padding:42px 35px;}
+  .qa-hero-visual{max-width:690px;width:100%;margin:auto;}
+  .qa-intro-grid{grid-template-columns:1fr 1fr;}
+  .qa-flow{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:700px){
+  .qa-hero {padding:32px 22px;}
+  .qa-hero h1 {font-size:clamp(35px,9vw,47px);}
+  .qa-hero-visual{padding:10px 0;}
+  .qa-intro-grid,.qa-flow{grid-template-columns:1fr;}
+  .qa-info-card,.qa-flow-step{min-height:0;}
+  .qa-evidence pre{padding:15px;font-size:10px;}
+  .qa-project-cover{padding:52px 17px 20px;}
+  .portfolio-project-grid > :last-child{grid-column:auto;}
+}
