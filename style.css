@@ -2066,3 +2066,7 @@ a.btn:focus-visible { outline: 3px solid #86a7ff; outline-offset: 3px; }
 .dm-hero-actions .btn-dark:link, .dm-hero-actions .btn-dark:visited { color: #162a22; }
 .dm-hero-actions .btn-dark:hover { background: #d7eadf; color: #10221a; }
 @media (max-width: 440px) { .dm-hero-actions .btn { width: 100%; } }
+
+/* Wider interdisciplinary positioning on About: prevent overlong heading words from overflowing. */
+.about-copy h1 { overflow-wrap: normal; }
+@media (min-width: 981px) { .about-copy h1 { font-size: clamp(46px, 4.3vw, 69px); } }
